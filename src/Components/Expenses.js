@@ -1,8 +1,7 @@
 import { ExpenseItem } from "./ExpenseItem";
-import "./ExpenseItem.css";
+import "./Expenses.css";
 
 export const Expenses = (props) => {
-  // eslint-disable-next-line array-callback-return
   const expenses = props.expenses.map((element) => {
     return (
       <ExpenseItem
@@ -14,5 +13,5 @@ export const Expenses = (props) => {
     );
   });
 
-  return expenses;
+  return <div className="expenses">{expenses}</div>;
 };
