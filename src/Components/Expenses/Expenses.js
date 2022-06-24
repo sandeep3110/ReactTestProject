@@ -1,4 +1,5 @@
 import { ExpenseItem } from "./ExpenseItem";
+import { Card } from "../UI/Card";
 import "./Expenses.css";
 
 export const Expenses = (props) => {
@@ -13,5 +14,5 @@ export const Expenses = (props) => {
     );
   });
 
-  return <div className="expenses">{expenses}</div>;
+  return <Card className="expenses">{expenses}</Card>;
 };
